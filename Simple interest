@@ -1,0 +1,13 @@
+pri_amt=int(input("Enter the principle amount: "))
+year=int(input("Enter the no of years: "))
+interest=0
+sen_cit=input("Is customer senior citizen(y/n): ")
+
+if(sen_cit=='y' or sen_cit=='Y'):
+    interest=(pri_amt*year*1.2)//100
+    print(interest)
+elif(sen_cit=='n' or sen_cit=='N'):
+    interest=(pri_amt*year*10)//100
+    print(interest)
+else:
+    print("Invalid...!")
