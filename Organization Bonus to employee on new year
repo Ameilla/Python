@@ -1,0 +1,25 @@
+grade=input("Enter the grade of the Employee: ")
+em_sal=int(input("Enter the Employee salary: "))
+salary=50000
+bonus=5000.0
+if(grade=='A'):
+    if(em_sal>10000):
+        bonus=bonus*0.5
+        total=em_sal+bonus
+        print("Total to be paid:",total)
+    else:
+        bonus=bonus*0.5*0.2
+        total=em_sal+bonus
+        print("Total to be paid:",total)
+elif(grade=='B'):
+    if(em_sal>10000):
+        bonus=bonus*1.0
+        total=em_sal+bonus
+        print("Total to be paid:",total)
+    else:
+        bonus=bonus*0.5*0.2
+        total=em_sal+bonus
+        print("Total to be paid:",total)
+else:
+    print("Invalid grade")
+    
