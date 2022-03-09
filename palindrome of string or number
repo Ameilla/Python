@@ -1,0 +1,23 @@
+String=input()
+String1=String[::-1]
+if(String1==String):
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+    
+    
+x=int(input("Enter the number "))
+num1=x
+rev=0
+while(x>0):
+    rem=x%10
+    rev=(rev*10)+rem
+    x=x//10
+print("Reverse = %d"%rev)
+num2=rev
+if(num1==num2):
+    print("palindrome")
+else:
+    print("Not a Palindrome")
+        
+
