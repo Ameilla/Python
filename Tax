@@ -1,0 +1,12 @@
+income=int(input("Enter the income: "))
+if(income<150000):
+    print("No Tax");
+elif(income>150001 and income<300000):
+    tax=income*0.1
+    print("Tax=",tax)
+elif(income>300001 and income<500000):
+    tax=income*0.2
+    print("Tax=",tax)
+elif(income>500001):
+    tax=income*0.3
+    print("Tax=",tax)
