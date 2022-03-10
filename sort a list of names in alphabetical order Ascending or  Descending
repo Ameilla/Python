@@ -1,0 +1,22 @@
+num=int(input("Enter the number of names you want: "))
+
+list_name=[]
+for i in range(num):
+    name=input("Enter the name: ")
+    list_name.append([name])
+
+order=input("Order(A/D): ")
+if(order=='A' or order=='a'):
+    sort_name=[x[0] for x in list_name]
+    a=sort_name.sort()
+    for i in sort_name:
+        print(i)
+
+elif(order=='D' or order=='d'):
+    rev_name=[x[0] for x in list_name]
+    b=rev_name.reverse()
+    for j in rev_name:
+        print(j)
+
+else:
+    print("Invalid order ...!")
