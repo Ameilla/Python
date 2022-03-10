@@ -1,0 +1,19 @@
+Mat1=[[1,2],
+      [5,3]]
+
+Mat2=[[2,3],
+      [4,1]]
+
+Mat_Sum=[[0,0],
+         [0,0]]
+
+
+for i in range (len(Mat1)):
+    for j in range (len(Mat2)):
+        Mat_Sum[i][j]=Mat1[i][j]+Mat2[i][j]
+
+print("Mat_Sum =")
+for i in range (len(Mat1)):
+    for j in range (len(Mat2)):
+        print("\t",Mat_Sum[i][j],end=" ")
+    print("")
