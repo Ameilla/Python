@@ -1,0 +1,27 @@
+n=int(input("Enter the length of the array: "))
+arr=[]
+for i in range(n):
+    a=int(input("Enter the number: "))
+    if a==-1:
+          break
+    else:
+        arr.append(a)
+print(arr)
+s=len(arr)
+add=0
+add1=0
+c=0
+c1=0
+for i in range(s):
+    if arr[i]==-1:
+        break
+    elif arr[i]<-1:
+        add=add+arr[i]
+        c+=1
+    elif arr[i]>=0:
+        add1=add1+arr[i]
+        c1+=1
+pavg=add/c
+navg=add1/c1
+print("The average of negative numbers is:",pavg)
+print("The average of positive numbers is:",navg)
