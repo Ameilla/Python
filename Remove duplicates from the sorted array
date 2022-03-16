@@ -1,0 +1,24 @@
+a=[]
+n=int(input("Enter the number of elemints in array:"))
+
+for x in range(0,n):
+    array=int(input())
+    a.append(array)
+temp=0
+for i in range(0,len(a)):
+    for j in range(i+1,len(a)):
+        if(a[i]>a[j]):
+            temp=a[i]
+            a[i]=a[j]
+            a[j]=temp
+
+print(a)
+b=set()
+uniq=[]
+for x in a:
+    if x not in b:
+        uniq.append(x)
+        b.add(x)
+print("Sorted Array = ",end="")
+print(uniq)
+
