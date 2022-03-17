@@ -1,0 +1,23 @@
+print("Enter * to exit...")
+string=[]
+
+while True:
+    ch=input("Enter any character: ")
+    if(ch=='*'):
+        break
+    string.append(ch)
+
+lower=0
+upper=0
+num=0
+for i in string:
+    if(i.islower()):
+        lower=lower+1
+    elif(i.isupper()):
+        upper=upper+1
+    elif(i.isdigit()):
+        num=num+1
+
+print("Total count of lower case:",lower)
+print("Total count of upper case:",upper)
+print("Total count of numbers=",num)
