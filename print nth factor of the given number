@@ -1,0 +1,12 @@
+num=int(input("Given Number: "))
+n=int(input("N = "))
+a=[]
+num_factors=0
+for i in range(1,num+1):
+    if(num%i==0):
+        num_factors+=1
+        a.append(i)
+        
+print("Number of factors = ",num_factors)
+
+print("%d factor of %d = %d" %(n,num,a[n-1]))
