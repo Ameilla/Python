@@ -1,0 +1,8 @@
+List=[14,67,48,23,5,62]
+
+List.sort()
+print(List)
+N=int(input("N = "))
+print(N,"Largest number:",List[N-1])
+
+    
