@@ -1,0 +1,20 @@
+up=""
+lo=""
+sp=""
+sc=""
+s=[" "]
+ch=input("enter a word: ")
+for i in ch:
+    if (i.islower()):
+        lo=lo+i
+    elif(i.isupper()):
+        up=up+i
+    elif(i in s):
+        sp=sp+i
+    else:
+        sc=sc+i
+x=len(sp)
+z=len(sc)
+print("special characters",sc)
+print("no of special characters",z)
+print("no of spaces",x)
